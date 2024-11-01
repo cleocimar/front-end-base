@@ -1,0 +1,29 @@
+<div class="container">
+  <mat-toolbar>
+    <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+    </button>
+    <span>Sistema [Frontend Base]</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button>
+    <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button>
+    <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-drawer-container autosize>
+    <mat-drawer #drawer mode="side">
+      <div>
+        <a routerLink="department"><span>Departamento</span></a>
+        <a><span>Cliente</span></a>
+        <a><span>Produto</span></a>
+        <a><span>Configuração</span></a>
+        </div>
+        </mat-drawer>
+        <div class="content">
+        <router-outlet/>
+      </div>
+    </mat-drawer-container>
+</div>
