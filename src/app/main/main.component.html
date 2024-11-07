@@ -13,7 +13,7 @@
     </button>
   </mat-toolbar>
 
-  <mat-drawer-container autosize>
+  <mat-drawer-container>
     <mat-drawer #drawer mode="side">
       <div>
         <a routerLink="department"><span>Departamento</span></a>
@@ -21,9 +21,11 @@
         <a><span>Produto</span></a>
         <a><span>Configuração</span></a>
         </div>
-        </mat-drawer>
-        <div class="content">
-        <router-outlet/>
-      </div>
-    </mat-drawer-container>
+    </mat-drawer>
+
+    <div class="content">
+      <router-outlet/>
+    </div>
+    
+  </mat-drawer-container>
 </div>
